@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Websocket</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="device.html">
+        <div>
+            <div class="row">
+                <label for="username">Usuário</label>
+                <input type="text" name="username" id="username" placeholder="Username" required>
+            </div>
+            <div class="row">
+                <label for="bdropbox" class="label">Dispositivo</label>
+                <select id="bdropbox" name="bdropbox" class="select">
+                </select>
+            </div>
+            <div class="button-container">
+                <button type="submit">Entrar</button>
+                <button type="button" onclick="window.location.href='config.html';">Configuração</button>
+            </div>
+        </div>
+    </form>
+    <script type="module" src="zigbee.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+</html>

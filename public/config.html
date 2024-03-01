@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuração</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="index.html">
+        <div>
+            <div class="row">
+                <label for="server-ip">Servidor</label>
+                <input type="text" id="server-ip" name="server-ip" placeholder="Digite o IP do servidor" required>
+            </div>
+            <div class="button-container">
+                <button type="button" class="subcookie" id="subcookie">Confirmar</button>
+                <button type="button" onclick="window.location.href='index.html';">Cancelar</button>
+            </div>
+        </div>
+    </form>
+    <div id="popup" class="popup"></div>
+    <script type="module" src="config.js"></script>
+</body>
+
+</html>

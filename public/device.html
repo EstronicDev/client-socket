@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styled.css">
+    <title>Websocket</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="row">
+            <button type="button" class="logout" id="logout">Logout</button>
+            <button type="button" id="clearMessages">Limpar Mensagens</button>
+            <div id="username">
+                Olá <span id="username_value"></span>!
+                Conectado com o dispositivo: <span id="device_value"></span><br>
+                IP server: <span id="server_value"></span>
+            </div>
+        </div>
+        <hr />
+
+        <div id="chat_content">
+
+            <div class="messages" id="messages">
+                <div class="new_message">
+                    <label class="form-label">
+                        <strong> Mensagens abaixo 🚀 </strong>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+        </footer>
+
+    </div>
+
+    <script src="https://cdn.socket.io/4.7.4/socket.io.min.js"></script>
+    <script type="module" src="client.js"></script>
+</body>
+
+</html>
